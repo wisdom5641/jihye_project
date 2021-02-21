@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Thai Cloth </title>
+
+    <!-- Bootstrap -->
+    <link href="/resources/bootstrap-4.4.1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/resources/bootstrap-4.4.1/dist/css/bootstrap-grid.min.css" rel="stylesheet"/>
+    <link href="/resources/bootstrap-4.4.1/dist/css/bootstrap-reboot.min.css" rel="stylesheet"/>
+
+    <!-- Font Awesome -->
+    <link href="/resources/font-awesome/css/all.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="/resources/css/style.css" rel="stylesheet">
+
+    <style>
+        @media screen and (min-width:430px){
+            body{
+                width:100vw;
+                height: 100vh;
+                background-color: coral;
+            }
+            .container{display: none;}
+            .oversize_screen{
+                text-align: center;
+                line-height: 50vh;
+            }
+            .oversize_screen > span{
+                font-size:5em;
+            }
+        }
+        @media screen and (max-width: 426px) and (min-width:320px) {
+            .mobile_header .mobile_toolbar .mobile_toolbar_left{display: none !important;}
+            .container{display: block;}
+            .oversize_screen{display: none;}
+            .container > .category_bar{display: none;}
+            .toolbar_icon.search{display: none;}
+            section.container{padding-top:60px;}
+            .main_cover{padding-bottom:50px; margin-top:0;}
+        }
+    </style>
+</head>
+
+<body>
+<!--Nav-->
+<header class="mobile_header">
+    <div class="mobile_toolbar">
+        <div class="mobile_toolbar_left">
+            <a href="javascript:history.back();" class="back_icon">
+                <i class="fas fa-angle-left"></i>
+            </a>
+        </div>
+        <div class="mobile_toolbar_center">
+            <a href="/view/index.html" class="logo">THAI CLOTH</a>
+        </div>
+        <div class="mobile_toolbar_right">
+            <a class="toolbar_icon search">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+    </div>
+    <div class="mobile_search">
+        <label>
+            <input type="search" class="form-control" placeholder="Search..."/>
+        </label>
+    </div>
+    <div class="clearfix"></div>
+
+    <!--category-->
+    <div class="container">
+        <div class="category_bar">
+            <div class="cata_item">
+                <a href="#All">All</a>
+            </div>
+            <div class="cata_item">
+                <a href="#Coat">Coat</a>
+            </div>
+            <div class="cata_item">
+                <a href="#Dress">Dress</a>
+            </div>
+            <div class="cata_item">
+                <a href="#Tops">Tops</a>
+            </div>
+            <div class="cata_item">
+                <a href="#Bottoms">Bottoms</a>
+            </div>
+        </div>
+    </div>
+    <!--category-->
+</header>
+<!--Nav-->
+
+<!--Main-->
+<section class="container">
+    <div class="main_cover">
+        <article>
+            <h1 class="page_title">주문목록</h1>
+        </article>
+        <article class="content_div_cover order_div_cover">
+            <div class="order_date">
+                <strong>2020/02/01</strong>
+            </div>
+            <div class="content_div order_div">
+                <div class="div_cover">
+                    <div class="fixed left img">
+                        <img src="/resources/image/cloth/cloth01.png" alt="clothImg"/>
+                    </div>
+                    <div class="fill">
+                        <span class="font-weight-bold">Dress</span><br/>
+                        <small>4Day - $27.98</small>
+                    </div>
+                    <div class="fixed right">
+                        <a href="/view/view/main.html">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="content_div_cover order_div_cover">
+            <div class="order_date">
+                <strong>2020/01/01</strong>
+            </div>
+            <div class="content_div order_div">
+                <div class="div_cover">
+                    <div class="fixed left img">
+                        <img src="/resources/image/cloth/cloth01.png" alt="clothImg"/>
+                    </div>
+                    <div class="fill">
+                        <span class="font-weight-bold">Dress</span><br/>
+                        <small>4Day - $27.98</small>
+                    </div>
+                    <div class="fixed right">
+                        <a href="/view/view/main.html">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="content_div_cover order_div_cover">
+            <div class="order_date">
+                <strong>2019/12/01</strong>
+            </div>
+            <div class="content_div order_div">
+                <div class="div_cover">
+                    <div class="fixed left img">
+                        <img src="/resources/image/cloth/cloth01.png" alt="clothImg"/>
+                    </div>
+                    <div class="fill">
+                        <span class="font-weight-bold">Dress</span><br/>
+                        <small>4Day - $27.98</small>
+                    </div>
+                    <div class="fixed right">
+                        <a href="/view/view/main.html">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="content_div_cover order_div_cover">
+            <div class="order_date">
+                <strong>2019/11/01</strong>
+            </div>
+            <div class="content_div order_div">
+                <div class="div_cover">
+                    <div class="fixed left img">
+                        <img src="/resources/image/cloth/cloth01.png" alt="clothImg"/>
+                    </div>
+                    <div class="fill">
+                        <span class="font-weight-bold">Dress</span><br/>
+                        <small>4Day - $27.98</small>
+                    </div>
+                    <div class="fixed right">
+                        <a href="/view/view/main.html">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+<!--Main-->
+
+<!-- 모바일사이즈에서 벗어났을때 -->
+<section class="oversize_screen">
+  <span>Your screen is too big</span>
+</section>
+<!-- 모바일사이즈에서 벗어났을때 -->
+
+<!--Mobile Bottom Menu-->
+<div class="mobile_tab">
+  <div class="mobile_tab_bar">
+      <div class="mobile_tab_item">
+          <a href="/view/index.html"><i class="fas fa-home"></i></a>
+      </div>
+      <div class="mobile_tab_item">
+          <a href="/view/user/main.html"><i class="fas fa-user"></i></a>
+      </div>
+      <div class="mobile_tab_item">
+          <a href="/view/cart/main.html" class="label_tag">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="label label_round label-blue">1</span>
+          </a>
+      </div>
+      <div class="mobile_tab_item">
+          <a href="javascript:window.scrollTo(0,0)"><i class="fas fa-arrow-alt-circle-up"></i></a>
+      </div>
+  </div>
+</div>
+<!--Mobile Bottom Menu-->
+
+<!--script-->
+<!--JQUERY-->
+<script src="/resources/js/jquery-3.4.1.js"></script>
+
+<!-- Bootstrap-->
+<script src="/resources/bootstrap-4.4.1/dist/js/bootstrap.bundle.min.js" rel="javascript"></script>
+<script src="/resources/bootstrap-4.4.1/dist/js/bootstrap.min.js" rel="javascript"></script>
+
+<!--Bootstrap Modal-->
+<script src="/resources/bootstrap-4.4.1/js/dist/modal.js"></script>
+
+<script src="/resources/bootstrap-4.4.1/js/dist/index.js"></script>
+
+<!-- Custom Theme Scripts -->
+<script src="/resources/js/script.js"></script>
+
+<script>
+  $(document).ready(function(){
+      /*모바일 검색창 나타내기*/
+      $(".toolbar_icon.search").click(function(){
+          $('.mobile_search').toggle();
+      });
+  });
+</script>
+<!--script-->
+
+</body>
+</html>

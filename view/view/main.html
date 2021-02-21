@@ -1,29 +1,113 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@include file="/resources/inclued/header.jsp"%>
-<style>
-    @media screen and (max-width: 426px) and (min-width:320px) {
-        .mobile_header{height:50px;}
-        .container > .category_bar{display: none;}
-        .mobile_search{top:50px;}
-        section.container{padding-top:60px;}
-        .main_cover{padding-bottom:50px;}
-    }
-</style>
-<body>
-<%--Nav--%>
-<%@include file="/resources/inclued/nav.jsp"%>
-<%--Nav--%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<%--Main--%>
+    <title>Thai Cloth </title>
+
+    <!-- Bootstrap -->
+    <link href="/resources/bootstrap-4.4.1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/resources/bootstrap-4.4.1/dist/css/bootstrap-grid.min.css" rel="stylesheet"/>
+    <link href="/resources/bootstrap-4.4.1/dist/css/bootstrap-reboot.min.css" rel="stylesheet"/>
+
+    <!-- Font Awesome -->
+    <link href="/resources/font-awesome/css/all.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="/resources/css/style.css" rel="stylesheet">
+
+    <style>
+        @media screen and (min-width:430px){
+            body{
+                width:100vw;
+                height: 100vh;
+                background-color: coral;
+            }
+            .container{display: none;}
+            .oversize_screen{
+                text-align: center;
+                line-height: 50vh;
+            }
+            .oversize_screen > span{
+                font-size:5em;
+            }
+        }
+        @media screen and (max-width: 426px) and (min-width:320px) {
+            .mobile_header .mobile_toolbar .mobile_toolbar_left{display: none !important;}
+            .container{display: block;}
+            .oversize_screen{display: none;}
+            .mobile_header{height:50px;}
+            .container > .category_bar{display: none;}
+            .mobile_search{top:50px;}
+            section.container{padding-top:60px;}
+            .main_cover{padding-bottom:50px;}
+        }
+    </style>
+</head>
+<body>
+<!--Nav-->
+    <header class="mobile_header">
+        <div class="mobile_toolbar">
+            <div class="mobile_toolbar_left">
+                <a href="javascript:history.back();" class="back_icon">
+                    <i class="fas fa-angle-left"></i>
+                </a>
+            </div>
+            <div class="mobile_toolbar_center">
+                <a href="/view/index.html" class="logo">THAI CLOTH</a>
+            </div>
+            <div class="mobile_toolbar_right">
+                <a class="toolbar_icon search">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+        </div>
+        <div class="mobile_search">
+            <label>
+                <input type="search" class="form-control" placeholder="Search..."/>
+            </label>
+        </div>
+        <div class="clearfix"></div>
+
+        <!--category-->
+        <div class="container">
+            <div class="category_bar">
+                <div class="cata_item">
+                    <a href="#All">All</a>
+                </div>
+                <div class="cata_item">
+                    <a href="#Coat">Coat</a>
+                </div>
+                <div class="cata_item">
+                    <a href="#Dress">Dress</a>
+                </div>
+                <div class="cata_item">
+                    <a href="#Tops">Tops</a>
+                </div>
+                <div class="cata_item">
+                    <a href="#Bottoms">Bottoms</a>
+                </div>
+            </div>
+        </div>
+        <!--category-->
+    </header>
+<!--Nav-->
+
+
+<!--Main-->
 <section class="container">
 <div class="main_cover">
-    <%--이미지--%>
+    <!--이미지-->
     <div class="product main_img">
        <img src="/resources/image/cloth/cloth01.png" alt="clothImg"/>
     </div>
-    <%--이미지--%>
+    <!--이미지-->
 
-    <%--상품이름&대여가능여부--%>
+    <!--상품이름&대여가능여부-->
     <div class="product product_name">
         <div class="name">Dress</div>
         <div class="rental">대여가능</div>
@@ -33,9 +117,9 @@
             </p>
         </div>
     </div>
-    <%--상품이름&대여가능여부--%>
+    <!--상품이름&대여가능여부-->
 
-    <%--상품대여가격--%>
+    <!--상품대여가격-->
     <div class="product product_price">
         <ul>
             <li>
@@ -60,15 +144,15 @@
             </li>
         </ul>
     </div>
-    <%--상품대여가격--%>
+    <!--상품대여가격-->
 
-    <%--대여하기--%>
+    <!--대여하기-->
     <div class="product product_cart">
-        <button type="button" class="btn btn-block btn-primary m-0" onclick="location.href='/cart'">Cart</button>
+        <button type="button" class="btn btn-block btn-primary m-0" onclick="location.href='/view/cart/main.html'">Cart</button>
     </div>
-    <%--대여하기--%>
+    <!--대여하기-->
 
-    <%--사이즈--%>
+    <!--사이즈-->
     <div class="product product_size">
         <div class="title">
             <p>
@@ -97,9 +181,9 @@
             </tbody>
         </table>
     </div>
-    <%--사이즈--%>
+    <!--사이즈-->
 
-    <%--제품 상세 정보--%>
+    <!--제품 상세 정보-->
     <div class="product product_detail">
         <div class="title">
             <p>제품 상세 정보</p>
@@ -267,9 +351,9 @@
             </tbody>
         </table>
     </div>
-    <%--제품 상세 정보--%>
+    <!--제품 상세 정보-->
 
-    <%--배송안내--%>
+    <!--배송안내-->
     <div class="product delivery">
         <div class="title">
             <p>배송안내</p>
@@ -295,9 +379,9 @@
             </dd>
         </dl>
     </div>
-    <%--배송안내--%>
+    <!--배송안내-->
 
-    <%--반품안내--%>
+    <!--반품안내-->
     <div class="product return">
         <div class="title">
             <p>반품안내</p>
@@ -321,18 +405,64 @@
             </dd>
         </dl>
     </div>
-    <%--반품안내--%>
+    <!--반품안내-->
 
 </div>
 </section>
-<%--Main--%>
+<!--Main-->
 
-<%--Mobile Bottom Menu--%>
-<%@include file="/resources/inclued/mobile_tap_bar.jsp"%>
-<%--Mobile Bottom Menu--%>
+<!-- 모바일사이즈에서 벗어났을때 -->
+<section class="oversize_screen">
+    <span>Your screen is too big</span>
+</section>
+<!-- 모바일사이즈에서 벗어났을때 -->
 
-<%--script--%>
-<%@include file="/resources/inclued/script.jsp"%>
-<%--script--%>
+<!--Mobile Bottom Menu-->
+<div class="mobile_tab">
+    <div class="mobile_tab_bar">
+        <div class="mobile_tab_item">
+            <a href="/view/index.html"><i class="fas fa-home"></i></a>
+        </div>
+        <div class="mobile_tab_item">
+            <a href="/view/user/main.html"><i class="fas fa-user"></i></a>
+        </div>
+        <div class="mobile_tab_item">
+            <a href="/view/cart/main.html" class="label_tag">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="label label_round label-blue">1</span>
+            </a>
+        </div>
+        <div class="mobile_tab_item">
+            <a href="javascript:window.scrollTo(0,0)"><i class="fas fa-arrow-alt-circle-up"></i></a>
+        </div>
+    </div>
+</div>
+<!--Mobile Bottom Menu-->
+
+<!--script-->
+<!--JQUERY-->
+<script src="/resources/js/jquery-3.4.1.js"></script>
+
+<!-- Bootstrap-->
+<script src="/resources/bootstrap-4.4.1/dist/js/bootstrap.bundle.min.js" rel="javascript"></script>
+<script src="/resources/bootstrap-4.4.1/dist/js/bootstrap.min.js" rel="javascript"></script>
+
+<!--Bootstrap Modal-->
+<script src="/resources/bootstrap-4.4.1/js/dist/modal.js"></script>
+
+<script src="/resources/bootstrap-4.4.1/js/dist/index.js"></script>
+
+<!-- Custom Theme Scripts -->
+<script src="/resources/js/script.js"></script>
+
+<script>
+    $(document).ready(function(){
+        /*모바일 검색창 나타내기*/
+        $(".toolbar_icon.search").click(function(){
+            $('.mobile_search').toggle();
+        });
+    });
+</script>
+<!--script-->
 </body>
 </html>
